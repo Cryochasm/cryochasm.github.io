@@ -1,25 +1,27 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content";
+import { Image } from "astro:assets";
+import profilePicImage from "/src/assets/profile-pic.png"
 
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
-import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 // Component Imports
-import CallToAction from '../components/CallToAction.astro';
-import Grid from '../components/Grid.astro';
-import Hero from '../components/Hero.astro';
-import Icon from '../components/Icon.astro';
-import Pill from '../components/Pill.astro';
-import PortfolioPreview from '../components/PortfolioPreview.astro';
+import CallToAction from "../components/CallToAction.astro";
+import Grid from "../components/Grid.astro";
+import Hero from "../components/Hero.astro";
+import Icon from "../components/Icon.astro";
+import Pill from "../components/Pill.astro";
+import BlogPreview from "../components/BlogPreview.astro";
 
 // Page section components
-import ContactCTA from '../components/ContactCTA.astro';
-import Skills from '../components/Skills.astro';
+import ContactCTA from "../components/ContactCTA.astro";
+import Skills from "../components/Skills.astro";
 
-// Content Fetching: List four most recent work projects
-const projects = (await getCollection('work'))
+// Content Fetching: List four most recent blogs
+const projects = (await getCollection("blog"))
 	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
-	.slice(0, 4);
+	.slice(0, 3);
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
@@ -30,22 +32,29 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is Jeanine White"
-					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
+					title="Hello, my name is CHANGEME"
+					tagline="CHANGEME Tagline"
 					align="start"
 				>
 					<div class="roles">
-						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
+						<Pill
+							><Icon icon="code" size="1.33em" /> CHANGEME Role</Pill
+						>
+						<Pill
+							><Icon icon="microphone-stage" size="1.33em" /> CHANGEME
+							Role</Pill
+						>
+						<Pill
+							><Icon icon="pencil-line" size="1.33em" /> CHANGEME Role</Pill
+						>
 					</div>
 				</Hero>
 
-				<img
-					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
+				<Image
+					alt="CHANGEME portrait description"
 					width="480"
 					height="620"
-					src="/src/assets/portrait.jpg"
+					src={profilePicImage}
 				/>
 			</header>
 
@@ -55,8 +64,8 @@ const projects = (await getCollection('work'))
 		<main class="wrapper stack gap-20 lg:gap-48">
 			<section class="section with-background with-cta">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Selected Work</h3>
-					<p>Take a look below at some of my featured work for clients from the past few years.</p>
+					<h3>Latest Blog</h3>
+					<p>Take a look below at some of my latest blog posts.</p>
 				</header>
 
 				<div class="gallery">
@@ -64,7 +73,7 @@ const projects = (await getCollection('work'))
 						{
 							projects.map((project) => (
 								<li>
-									<PortfolioPreview project={project} />
+									<BlogPreview project={project} />
 								</li>
 							))
 						}
@@ -72,7 +81,7 @@ const projects = (await getCollection('work'))
 				</div>
 
 				<div class="cta">
-					<CallToAction href="/work/">
+					<CallToAction href="/blog/">
 						View All
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
@@ -81,21 +90,42 @@ const projects = (await getCollection('work'))
 
 			<section class="section with-background bg-variant">
 				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Mentions</h3>
+					<h3>Testimonials</h3>
 					<p>
-						I have been fortunate enough to receive praise for my work in several publications. Take
-						a look below to learn more.
+						I have been fortunate enough to work with some amazing
+						people. Take a look below to see what they have to say.
 					</p>
 				</header>
 
 				<div class="gallery">
-					<Grid variant="small">
+					<Grid variant="testimonial">
 						{
-							['Medium', 'BuzzFeed', 'The Next Web', 'awwwards.', 'TechCrunch'].map((brand) => (
-								<li class="mention-card">
-									<p>{brand}</p>
-								</li>
-							))
+							(
+								<>
+									<div class="testimonial-card">
+										<section>
+											Lorem ipsum dolor sit amet,
+											consectetur adipiscing elit.
+											Curabitur posuere commodo venenatis.
+											Pellentesque habitant morbi
+											tristique senectus et netus et
+											malesuada fames ac turpis egestas.
+											<hr />
+											Jane Doe
+										</section>
+									</div>
+									<div class="testimonial-card">
+										<section>
+											Nam non ligula vel metus efficitur
+											hendrerit. In hac habitasse platea
+											dictumst. Praesent et mauris ut mi
+											dapibus semper.
+											<hr />
+											John Smith
+										</section>
+									</div>
+								</>
+							)
 						}
 					</Grid>
 				</div>
@@ -161,7 +191,7 @@ const projects = (await getCollection('work'))
 	.with-background::before {
 		--hero-bg: var(--bg-image-subtle-2);
 
-		content: '';
+		content: "";
 		position: absolute;
 		pointer-events: none;
 		left: 50%;
@@ -170,7 +200,7 @@ const projects = (await getCollection('work'))
 		top: 0;
 		transform: translateY(-75%) translateX(-50%);
 		background:
-			url('/src/assets/backgrounds/noise.png') top center/220px repeat,
+			url("/src/assets/backgrounds/noise.png") top center/220px repeat,
 			var(--hero-bg) center center / var(--bg-gradient-size) no-repeat,
 			var(--gray-999);
 		background-blend-mode: overlay, normal, normal, normal;
@@ -197,12 +227,12 @@ const projects = (await getCollection('work'))
 	@media (min-width: 50em) {
 		.section {
 			grid-template-columns: repeat(4, 1fr);
-			grid-template-areas: 'header header header header' 'gallery gallery gallery gallery';
+			grid-template-areas: "header header header header" "gallery gallery gallery gallery";
 			gap: 5rem;
 		}
 
 		.section.with-cta {
-			grid-template-areas: 'header header header cta' 'gallery gallery gallery gallery';
+			grid-template-areas: "header header header cta" "gallery gallery gallery gallery";
 		}
 
 		.section-header {
@@ -238,6 +268,20 @@ const projects = (await getCollection('work'))
 		text-align: center;
 		border: 1px solid var(--gray-800);
 		border-radius: 1.5rem;
+		color: var(--gray-300);
+		background: var(--gradient-subtle);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.testimonial-card {
+		display: flex;
+		height: auto;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		border: 1px solid var(--gray-800);
+		border-radius: 1.5rem;
+		padding: 2rem;
 		color: var(--gray-300);
 		background: var(--gradient-subtle);
 		box-shadow: var(--shadow-sm);

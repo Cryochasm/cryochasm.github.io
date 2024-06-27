@@ -1,0 +1,50 @@
+---
+import { getCollection } from "astro:content";
+
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+import ContactCTA from "../components/ContactCTA.astro";
+import Hero from "../components/Hero.astro";
+import Grid from "../components/Grid.astro";
+import SoulpreneursPreview from "../components/SoulpreneursPreview.astro";
+
+const projects = (await getCollection("soulpreneurs"));
+---
+
+<BaseLayout
+	title="Soulpreneurs"
+	description="Meet some of the members of the Soulpreneur Collective"
+>
+	<div class="stack gap-20">
+		<main class="wrapper stack gap-8">
+			<Hero
+				title="Soulpreneurs"
+				tagline="Check out some of my friends and colleagues in the Soulpreneur Collective."
+				align="start"
+			/>
+			<Grid variant="offset">
+				{
+					projects.map((project) => (
+						<li>
+							<SoulpreneursPreview project={project} />
+						</li>
+					))
+				}
+			</Grid>
+			<header class="section-header stack gap-2 lg:gap-4">
+				<h3>Would you like to join the Collective?</h3>
+				<p>
+					<a
+					href="https://www.intentioninflow.com/offers"
+					>
+					<img
+						src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/Tk5oQj27oGxr5J7mIMog/media/63422e316cf3e33c9dec2311.png"
+					/>
+						www.intentioninflow.com/offers
+					</a>
+				</p>
+			</header>
+		</main>
+		<ContactCTA />
+	</div>
+</BaseLayout>
