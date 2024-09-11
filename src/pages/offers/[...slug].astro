@@ -11,7 +11,7 @@ import Pill from "../../components/Pill.astro";
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 interface Props {
-	entry: CollectionEntry<"offers">;
+	entry: CollectionEntry<"projects">;
 }
 
 
@@ -19,7 +19,7 @@ interface Props {
 // Read more about dynamic routes and this `getStaticPaths` function in the Astro docs:
 // https://docs.astro.build/en/core-concepts/routing/#dynamic-routes
 export async function getStaticPaths() {
-	const work = await getCollection("offers");
+	const work = await getCollection("projects");
 	return work.map((entry) => ({
 		params: { slug: entry.slug },
 		props: { entry },
@@ -44,8 +44,8 @@ if (!images[entry.data.img])
 		<div class="stack gap-15">
 			<header>
 				<div class="wrapper stack gap-2">
-					<a class="back-link" href="/offers/"
-						><Icon icon="arrow-left" />Offers</a
+					<a class="back-link" href="/projects/"
+						><Icon icon="arrow-left" />projects</a
 					>
 					<Hero title={entry.data.title} align="start">
 						<div class="details">

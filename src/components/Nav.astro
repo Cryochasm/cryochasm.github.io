@@ -6,8 +6,8 @@ import type { iconPaths } from "./IconPaths";
 const textLinks: { label: string; href: string }[] = [
 	{ label: "Home", href: "/" },
 	{ label: "Blog", href: "/blog/" },
-	{ label: "Work", href: "/events/" },
-	{ label: "Projects", href: "/offers/" },
+	{ label: "Work", href: "/work/" },
+	{ label: "Projects", href: "/projects/" },
 	{ label: "About", href: "/about/" },
 	{ label: "Contact", href: "/contact/" },
 ];
@@ -18,6 +18,11 @@ const iconLinks: {
 	href: string;
 	icon: keyof typeof iconPaths;
 }[] = [
+	{
+		label: "GitHub",
+		href: "https://github.com/Cryochasm/",
+		icon: "github-logo",
+	},
 	{
 		label: "LinkedIn",
 		href: "https://www.linkedin.com/in/levi-hancock-92b87b93/",
@@ -35,7 +40,7 @@ const iconLinks: {
 				size="1.6em"
 				gradient
 			/>
-			CHANGEME Site Name
+			cryochasm.github.io
 		</a>
 		<menu-button>
 			<template>

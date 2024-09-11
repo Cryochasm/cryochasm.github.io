@@ -4,23 +4,23 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 import ContactCTA from "../components/ContactCTA.astro";
-import EventPreview from "../components/EventPreview.astro";
+import WorkPreview from "../components/WorkPreview.astro";
 import Hero from "../components/Hero.astro";
 import Grid from "../components/Grid.astro";
 
-const projects = (await getCollection("events")).sort(
+const projects = (await getCollection("work")).sort(
 	(a, b) => a.data.sortDate.valueOf() - b.data.sortDate.valueOf(),
 );
 ---
 
 <BaseLayout
-	title="Upcoming Events | CHANGEME"
-	description="Learn about CHANGEME most recent events"
+	title="Upcoming work | CHANGEME"
+	description="Learn about CHANGEME most recent work"
 >
 	<div class="stack gap-20">
 		<main class="wrapper stack gap-8">
 			<Hero
-				title="Upcoming Events"
+				title="Work History"
 				tagline=""
 				align="start"
 			/>
@@ -28,7 +28,7 @@ const projects = (await getCollection("events")).sort(
 				{
 					projects.map((project) => (
 						<li>
-							<EventPreview project={project} />
+							<WorkPreview project={project} />
 						</li>
 					))
 				}
