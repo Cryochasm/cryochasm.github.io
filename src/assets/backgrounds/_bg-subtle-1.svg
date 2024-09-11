@@ -2,10 +2,10 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) 
 Use "find and replace" (ctrl+h) to change colors from default.
 Colors Used
-Color 1 #ff0000
-Color 2 #00ff00
-Color 3 #0000ff
-Background #ffffff
+Color 1 #00296c
+Color 2 #007EA7
+Color 3 #00A7E1
+Background #000000
 -->
 
 <svg
@@ -25,7 +25,7 @@ Background #ffffff
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
      id="namedview1"
-     pagecolor="#ffffff"
+     pagecolor="#000000"
      bordercolor="#eeeeee"
      borderopacity="1"
      inkscape:showpageshadow="0"
@@ -42,7 +42,7 @@ Background #ffffff
      inkscape:window-y="726"
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1"
-     inkscape:export-bgcolor="#ffffffff" />
+     inkscape:export-bgcolor="#000000ff" />
   <defs
      id="defs1">
     <meshgradient
@@ -57,19 +57,19 @@ Background #ffffff
            id="meshpatch79">
           <stop
              path="c 240,0  480,0  720,0"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop79" />
           <stop
              path="c 0,106.667  23.6528,465.628  23.6526,572.296"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop80" />
           <stop
              path="c -218.318,51.2477  -503.655,-252.296  -743.655,-252.296"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop81" />
           <stop
              path="c 0,-106.667  0,-213.333  0.0024,-320"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop82" />
         </meshpatch>
         <meshpatch
@@ -79,11 +79,11 @@ Background #ffffff
              id="stop83" />
           <stop
              path="c 37.4502,630.97  -356.762,512.935  -335.081,584.122"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop84" />
           <stop
              path="c -240,0.000384125  -71.9895,136.003  -361.266,-11.826"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop85" />
         </meshpatch>
         <meshpatch
@@ -93,11 +93,11 @@ Background #ffffff
              id="stop86" />
           <stop
              path="c 0,106.667  -975.678,235.014  -500.65,556.527"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop87" />
           <stop
              path="c -240,-0.00228344  -391.302,126.146  -554.431,27.595"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop88" />
         </meshpatch>
         <meshpatch
@@ -107,11 +107,11 @@ Background #ffffff
              id="stop89" />
           <stop
              path="c 0,106.667  0,213.333  0,320"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop90" />
           <stop
              path="c -240,0  -980.654,236.527  -1220.65,236.527"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop91" />
         </meshpatch>
       </meshrow>
@@ -124,11 +124,11 @@ Background #ffffff
              id="stop92" />
           <stop
              path="c -240,-0.000780413  442.457,-248.353  -528.815,-206.961"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop93" />
           <stop
              path="c 0,-106.667  0,-213.333  0.006,-320"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop94" />
         </meshpatch>
         <meshpatch
@@ -138,7 +138,7 @@ Background #ffffff
              id="stop95" />
           <stop
              path="c -240,0.00110892  -312.46,-41.3907  -552.46,-41.393"
-             style="stop-color:#00ff00;stop-opacity:0.29803923"
+             style="stop-color:#007EA7;stop-opacity:0.29803923"
              id="stop96" />
         </meshpatch>
         <meshpatch
@@ -148,7 +148,7 @@ Background #ffffff
              id="stop97" />
           <stop
              path="c -240,-0.000988859  -168.57,-242.441  -666.781,-25.623"
-             style="stop-color:#0000ff;stop-opacity:0.29803923"
+             style="stop-color:#00A7E1;stop-opacity:0.29803923"
              id="stop98" />
         </meshpatch>
         <meshpatch
@@ -158,7 +158,7 @@ Background #ffffff
              id="stop99" />
           <stop
              path="c -1324.08,-9.85531  -891.952,273.978  -1131.95,273.977"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop100" />
         </meshpatch>
       </meshrow>
@@ -171,11 +171,11 @@ Background #ffffff
              id="stop101" />
           <stop
              path="c -407.541,55.1899  -71.9908,-136.003  -311.991,-136.003"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop102" />
           <stop
              path="c 0,-106.667  0,-213.333  -0.008,-320"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop103" />
         </meshpatch>
         <meshpatch
@@ -185,7 +185,7 @@ Background #ffffff
              id="stop104" />
           <stop
              path="c -54.7202,-17.7379  -227.707,76.8725  -467.703,76.871"
-             style="stop-color:#ff0000;stop-opacity:0.29803923"
+             style="stop-color:#00296c;stop-opacity:0.29803923"
              id="stop105" />
         </meshpatch>
         <meshpatch
@@ -195,7 +195,7 @@ Background #ffffff
              id="stop106" />
           <stop
              path="c -240.001,-0.00125634  -604.176,29.5665  -670.725,-13.797"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop107" />
         </meshpatch>
         <meshpatch
@@ -205,7 +205,7 @@ Background #ffffff
              id="stop108" />
           <stop
              path="c -240,0  -1189.58,72.9291  -1429.58,72.929"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop109" />
         </meshpatch>
       </meshrow>
@@ -218,11 +218,11 @@ Background #ffffff
              id="stop110" />
           <stop
              path="c -240,0  -480,0  -720,0"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop111" />
           <stop
              path="c 0,-106.667  0,-213.333  0.001,-320.001"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop112" />
         </meshpatch>
         <meshpatch
@@ -232,7 +232,7 @@ Background #ffffff
              id="stop113" />
           <stop
              path="c -240,0  -480,0  -720,-2.27374e-13"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop114" />
         </meshpatch>
         <meshpatch
@@ -242,7 +242,7 @@ Background #ffffff
              id="stop115" />
           <stop
              path="c -240,0  -480,0  -720.002,0.003"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop116" />
         </meshpatch>
         <meshpatch
@@ -252,7 +252,7 @@ Background #ffffff
              id="stop117" />
           <stop
              path="c -240,0  -480,0  -720,-0.002"
-             style="stop-color:#ffffff;stop-opacity:1"
+             style="stop-color:#000000;stop-opacity:1"
              id="stop118" />
         </meshpatch>
       </meshrow>

@@ -6,9 +6,8 @@ import type { iconPaths } from "./IconPaths";
 const textLinks: { label: string; href: string }[] = [
 	{ label: "Home", href: "/" },
 	{ label: "Blog", href: "/blog/" },
-	{ label: "Events", href: "/events/" },
-	{ label: "Offers", href: "/offers/" },
-	{ label: "Soulpreneurs", href: "/soulpreneurs/" },
+	{ label: "Work", href: "/events/" },
+	{ label: "Projects", href: "/offers/" },
 	{ label: "About", href: "/about/" },
 	{ label: "Contact", href: "/contact/" },
 ];
@@ -20,24 +19,9 @@ const iconLinks: {
 	icon: keyof typeof iconPaths;
 }[] = [
 	{
-		label: "Facebook",
-		href: "https://www.facebook.com/CHANGEME",
-		icon: "facebook-logo",
-	},
-	{
-		label: "Instagram",
-		href: "https://www.instagram.com/CHANGEME",
-		icon: "instagram-logo",
-	},
-	{
 		label: "LinkedIn",
-		href: "https://www.linkedin.com/CHANGEME",
+		href: "https://www.linkedin.com/in/levi-hancock-92b87b93/",
 		icon: "linkedin-logo",
-	},
-	{
-		label: "YouTube",
-		href: "https://www.youtube.com/@CHANGEME",
-		icon: "youtube-logo",
 	},
 ];
 ---
@@ -46,7 +30,7 @@ const iconLinks: {
 	<div class="menu-header">
 		<a href="/" class="site-title">
 			<Icon
-				icon="flower-lotus"
+				icon="rocket-launch"
 				color="var(--accent-regular)"
 				size="1.6em"
 				gradient
