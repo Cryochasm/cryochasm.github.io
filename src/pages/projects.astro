@@ -4,21 +4,21 @@ import { getCollection } from "astro:content";
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 import ContactCTA from "../components/ContactCTA.astro";
-import OffersPreview from "../components/OffersPreview.astro";
+import ProjectsPreview from "../components/ProjectsPreview.astro";
 import Hero from "../components/Hero.astro";
 import Grid from "../components/Grid.astro";
 
-const projects = (await getCollection("offers"));
+const projects = (await getCollection("projects"));
 ---
 
 <BaseLayout
-	title="Offers | CHANGEME"
+	title="Projects | CHANGEME"
 	description="CHANGEME See what I have to offer."
 >
 	<div class="stack gap-20">
 		<main class="wrapper stack gap-8">
 			<Hero
-				title="Offers"
+				title="projects"
 				tagline="Ways to work with me"
 				align="start"
 			/>
@@ -26,7 +26,7 @@ const projects = (await getCollection("offers"));
 				{
 					projects.map((project) => (
 						<li>
-							<OffersPreview project={project} />
+							<ProjectsPreview project={project} />
 						</li>
 					))
 				}
