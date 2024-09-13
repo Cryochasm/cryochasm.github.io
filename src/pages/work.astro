@@ -9,13 +9,13 @@ import Hero from "../components/Hero.astro";
 import Grid from "../components/Grid.astro";
 
 const projects = (await getCollection("work")).sort(
-	(a, b) => a.data.sortDate.valueOf() - b.data.sortDate.valueOf(),
+	(a, b) => b.data.sortValue.valueOf() - a.data.sortValue.valueOf(),
 );
 ---
 
 <BaseLayout
-	title="Upcoming work | CHANGEME"
-	description="Learn about CHANGEME most recent work"
+	title="Work History | Levi Hancock"
+	description="Past Experience"
 >
 	<div class="stack gap-20">
 		<main class="wrapper stack gap-8">
