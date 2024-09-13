@@ -3,7 +3,7 @@ import type { CollectionEntry } from "astro:content";
 import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
 interface Props {
-	project: CollectionEntry<"events">;
+	project: CollectionEntry<"work">;
 }
 
 const { data, slug } = Astro.props.project;
@@ -17,7 +17,7 @@ if (!images[data.img])
 	);
 ---
 
-<a class="list" href={`/events/${slug}`}>
+<a class="list" href={`/work/${slug}`}>
 	<div class="title">{data.title}</div>
 	<Image
 		src={images[data.img]()}
@@ -25,12 +25,9 @@ if (!images[data.img])
 		loading="lazy"
 		decoding="async"
 	/>
-	<div class="description">{data.description}</div>
-	<div class="date">
-		{data.eventDate}
-		<p>{data.eventTime}</p>
-	</div>
-	<div class="location">{data.eventLocation}</div>
+	<div class="employer">{data.employer}</div>
+	<div class="startDate">Start Date<br>{data.startDate}</div>
+	<div class="endDate">End Date <br>{data.endDate}</div>
 </a>
 
 <style>
@@ -41,9 +38,9 @@ if (!images[data.img])
 		grid-template-areas:
 			"img "
 			"title"
-			"description"
-			"date"
-			"location";
+			"employer"
+			"startDate"
+			"endDate";
 		height: auto;
 		background: var(--gradient-subtle);
 		border: 1px solid var(--gray-800);
@@ -69,16 +66,40 @@ if (!images[data.img])
 		background: var(--gray-999);
 		color: var(--gray-200);
 		border-radius: 0.375rem;
+		font-size: var(--text-xl);
 	}
 
-	.date {
-		grid-area: date;
+	.employer {
+		grid-area: employer;
 		z-index: 1;
 		margin: 0.5rem;
 		padding: 0.5rem 1rem;
 		background: var(--gray-999);
 		color: var(--gray-200);
 		border-radius: 0.375rem;
+		font-size: var(--text-lg);
+	}
+
+	.startDate {
+		grid-area: startDate;
+		z-index: 1;
+		margin: 0.5rem;
+		padding: 0.5rem 1rem;
+		background: var(--gray-999);
+		color: var(--gray-200);
+		border-radius: 0.375rem;
+		font-size: var(--text-md);
+	}
+
+	.endDate {
+		grid-area: endDate;
+		z-index: 1;
+		margin: 0.5rem;
+		padding: 0.5rem 1rem;
+		background: var(--gray-999);
+		color: var(--gray-200);
+		border-radius: 0.375rem;
+		font-size: var(--text-md);
 	}
 
 	.description {
@@ -119,8 +140,8 @@ if (!images[data.img])
 			grid-template-columns: 20% 50% 30%;
 			grid-template-rows: 50% 50%;
 			grid-template-areas:
-				"img title date"
-				"img description location";
+				"img title startDate"
+				"img employer endDate";
 			height: 14rem;
 		}
 

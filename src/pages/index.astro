@@ -1,7 +1,7 @@
 ---
 import { getCollection } from "astro:content";
 import { Image } from "astro:assets";
-import profilePicImage from "/src/assets/profile-pic.png"
+import profilePicImage from "/src/assets/profile-pic.jpg";
 
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from "../layouts/BaseLayout.astro";
@@ -40,17 +40,15 @@ const projects = (await getCollection("blog"))
 						<Pill
 							><Icon icon="circuitry" size="1.33em" /> Engineering</Pill
 						>
+						<Pill><Icon icon="code" size="1.33em" /> Design </Pill>
 						<Pill
-							><Icon icon="code" size="1.33em" /> Design </Pill
-						>
-						<Pill
-							><Icon icon="robot" size="1.33em" /> Manufacturing </Pill
-						>
+							><Icon icon="robot" size="1.33em" /> Manufacturing
+						</Pill>
 					</div>
 				</Hero>
 
 				<Image
-					alt="CHANGEME portrait description"
+					alt="Levi Hancock portrait"
 					width="480"
 					height="620"
 					src={profilePicImage}
@@ -84,49 +82,6 @@ const projects = (await getCollection("blog"))
 						View All
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
-				</div>
-			</section>
-
-			<section class="section with-background bg-variant">
-				<header class="section-header stack gap-2 lg:gap-4">
-					<h3>Testimonials</h3>
-					<p>
-						I have been fortunate enough to work with some amazing
-						people. Take a look below to see what they have to say.
-					</p>
-				</header>
-
-				<div class="gallery">
-					<Grid variant="testimonial">
-						{
-							(
-								<>
-									<div class="testimonial-card">
-										<section>
-											Lorem ipsum dolor sit amet,
-											consectetur adipiscing elit.
-											Curabitur posuere commodo venenatis.
-											Pellentesque habitant morbi
-											tristique senectus et netus et
-											malesuada fames ac turpis egestas.
-											<hr />
-											Jane Doe
-										</section>
-									</div>
-									<div class="testimonial-card">
-										<section>
-											Nam non ligula vel metus efficitur
-											hendrerit. In hac habitasse platea
-											dictumst. Praesent et mauris ut mi
-											dapibus semper.
-											<hr />
-											John Smith
-										</section>
-									</div>
-								</>
-							)
-						}
-					</Grid>
 				</div>
 			</section>
 		</main>

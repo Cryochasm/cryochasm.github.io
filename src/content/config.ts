@@ -13,27 +13,27 @@ export const collections = {
 		}),
 
 	}),
-	soulpreneurs: defineCollection({
+	work: defineCollection({
 		type: 'content',
 		schema: z.object({
 			title: z.string(),
-			description: z.string(),
+			employer: z.string(),
 			img: z.string(),
 			img_alt: z.string().optional(),
+			sortValue: z.number(),
+			startDate: z.string().optional(),
+			endDate: z.string().optional(),
 		}),
 
 	}),
-	event: defineCollection({
+	projects: defineCollection({
 		type: 'content',
 		schema: z.object({
 			title: z.string(),
 			description: z.string(),
 			img: z.string(),
 			img_alt: z.string().optional(),
-			sortDate: z.coerce.date(),
-			eventDate: z.string(),
-			eventTime: z.string(),
-			eventLocation: z.string(),
+			sorting: z.string().optional(),
 		}),
 
 	}),
