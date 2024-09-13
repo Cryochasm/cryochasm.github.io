@@ -1,20 +1,15 @@
 ---
 title: Altium Standards
 publishDate: 2019-12-01 00:00:00
-img: /src/assets/AltiumLogo.png
+img: /src/assets/altium_logo.png
 img_alt: Altium Designer
 description: |
-  We paired with a cutting-edge music API and a team of horticulturalists
-  to build AI-generated playlists that maximize houseplant health.
+  Standards used for schematic capture, parts libraries, part footprints, drawing title blocks, 
 tags:
   - Altium
   - EDA Tools
-  - Backend
 ---
-
-# Altium Standards
-
-Preferences file is located in the Bitbucket Repo [https://bitbucket.org/t2-engineering/altium-libs/src/master/](https://bitbucket.org/t2-engineering/altium-libs/src/master/)
+Standards are important for keeping a design unified. Here are a few standards I helped develop to produce consistent designs across many projects.
 
 ## Component Layer Pair Definitions
 
@@ -56,21 +51,21 @@ Preferences file is located in the Bitbucket Repo [https://bitbucket.org/t2-engi
 
 | **Component Type** | **String**                                  | **Example**           |
 | ------------------ | ------------------------------------------- | --------------------- |
-| Resistor           | R<SIZE>_<RESISTANCE>_<WATTS>_<TOLERANCE>    | R0402_4K7R_1/4W_1%    |
-| Capacitor          | C<SIZE>_<CAPACITANCE>_<VOLTAGE>_<TEMP>      | C0603_10uF_12V_X7R    |
-| Cap Polarized      | CP<SIZE>_<CAPACITANCE>_<VOLTAGE>_<TEMP>     | CP1206_470uF_3V3_X7R  |
-| Inductor           | L<SIZE>_<INDUCTANCE>_<CURRENT>_<RESISTANCE> | L4x4_2.2uH_3.25A_61mR |
-| Ferrite Bead       | FB<SIZE>_<POWER>_<RESISTANCE_FREQ>          | FB0805_2A_150R        |
+| Resistor           | `R<SIZE>_<RESISTANCE>_<WATTS>_<TOLERANCE>`    | R0402_4K7R_1/4W_1%    |
+| Capacitor          | `C<SIZE>_<CAPACITANCE>_<VOLTAGE>_<TEMP>`      | C0603_10uF_12V_X7R    |
+| Cap Polarized      | `CP<SIZE>_<CAPACITANCE>_<VOLTAGE>_<TEMP>`     | CP1206_470uF_3V3_X7R  |
+| Inductor           | `L<SIZE>_<INDUCTANCE>_<CURRENT>_<RESISTANCE>` | L4x4_2.2uH_3.25A_61mR |
+| Ferrite Bead       | `FB<SIZE>_<POWER>@<RESISTANCE_FREQ>`          | FB0805_2A_150R        |
 
 ## Custom Project Parameters
 
 | **Name**         | **Value**              |
 | ---------------- | ---------------------- |
-| CustomerAddress1 | 382 Marshall Way STE A |
-| CustomerAddress2 | Layton, UT 84041       |
-| CustomerName     | T2 Engineering         |
-| CustomerPhone    | 801-719-1999           |
-| CustomerWebsite  | www.t2eng.com          |
+| CustomerAddress1 | Street Address         |
+| CustomerAddress2 | City, State Zip        |
+| CustomerName     | Company Name           |
+| CustomerPhone    | Phone                  |
+| CustomerWebsite  | `www.companyname.com`    |
 | ProjectID        | CUST-PROJ              |
 | ProjectRev       | 1.A.0                  |
 | ProjectTitle     | Project Name           |

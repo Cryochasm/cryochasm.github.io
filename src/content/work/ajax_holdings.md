@@ -4,8 +4,8 @@ employer: Ajax Holdings LLC
 img: /src/assets/circuits.jpg
 img_alt: Printed Circuit Board
 sortValue: 005
-startDate: January, 2001
-endDate: July, 2007 
+startDate: February, 2021
+endDate: March, 2023 
 ---
 |            |  |
 | --         |--| 
