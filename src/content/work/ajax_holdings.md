@@ -7,19 +7,18 @@ sortValue: 005
 startDate: January, 2001
 endDate: July, 2007 
 ---
-# Owner
-## Ajax Holdings LLC
 |            |  |
-| --         |--|
-| Supervisor |  |  
-| Street     |  |  
-| City       |  |
-| State      |  | 
-| Zip        |  |
+| --         |--| 
+| City       | Clearfield |
+| State      | Utah | 
+| Zip        | 84015 |
 
 ## Duties
-* Bullet
-* List
+* Owner/Operator
+* Electrical Engineering Consulting
+* Reverse Engineering
+* Prototyping
+* Testing
 
 ## Notes
 What I learned at this position.

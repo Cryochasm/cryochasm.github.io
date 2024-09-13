@@ -1,9 +1,9 @@
 ---
-title: Project Name
-img: /src/assets/stock-1.jpg
+title: Setpoint
+img: /src/assets/setpoint-wbrt.png
 img_alt: Image Description
 description: |
-  Preview Description
+  Battery testing for electric vehicles
 ---
 ## Description
 Long description

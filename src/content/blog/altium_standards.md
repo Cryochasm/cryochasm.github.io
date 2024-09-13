@@ -100,7 +100,7 @@ There are a few file based libraries that are used because you can not add an ar
 
 IPC-7093A
 
-![](/src/assets/blog/clip_image001.png)
+![](/src/assets/solder_mask_defined_pad.png)
 
 Vary from IPC to have .3mm holes for cheaper PCB fab. When drawing the mask regions in Altium start with 0.5mm Dia and 0.3mm Hole vias with 0.2mm solder mask expansion with the from hole box checked. Draw .15mm lines to connect vias. Put View Configuration into Draft mode and use lines as reference. After regions are drawn, remove lines and change via mask expansion to 0.05mm from hole edge.
 

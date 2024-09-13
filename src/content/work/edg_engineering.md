@@ -7,15 +7,14 @@ sortValue: 001
 startDate: January, 2001
 endDate: July, 2007 
 ---
-# Electrical Draftsman
-## EDG Engineering
 |  |  |
 | -- | -- |
 | Supervisor | Joseph Hancock P.E. |  
-| Street | 3580 S 6000 W |  
 | City | West Valley City  |
 | State | UT | 
 | Zip | 84128  |
+## Job Description
+EDG Engineering designs power distribution systems for commercial buildings and produces plans for an electrical contractor to build. 
 
 ## Duties
 * CAD Drawings

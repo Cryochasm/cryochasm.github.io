@@ -1,9 +1,9 @@
 ---
-title: Project Name
-img: /src/assets/stock-1.jpg
+title: Loveland Living Planet Aquarium
+img: /src/assets/Aquarium-9374.jpg
 img_alt: Image Description
 description: |
-  Preview Description
+  Troubleshooting Art Display
 ---
 ## Description
 Long description

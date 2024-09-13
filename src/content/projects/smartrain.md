@@ -1,9 +1,9 @@
 ---
-title: Project Name
-img: /src/assets/stock-1.jpg
+title: Smartrain Sprinkler Controller
+img: /src/assets/smartrain.png
 img_alt: Image Description
 description: |
-  Preview Description
+  IoT Smart Sprinker Controller
 ---
 ## Description
 Long description

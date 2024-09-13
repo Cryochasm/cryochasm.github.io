@@ -4,22 +4,22 @@ employer: Selu Technologies
 img: /src/assets/Logo_Selu1_Silver.png
 img_alt: Image Description
 sortValue: 006
-startDate: January, 2001
-endDate: July, 2007 
+startDate: November, 2020
+endDate: February, 2021
 ---
-# Position Title
-## Company Name
 |            |  |
 | --         |--|
-| Supervisor |  |  
-| Street     |  |  
-| City       |  |
-| State      |  | 
-| Zip        |  |
+| Supervisor | Orlin Wetzker Chief Product Officer |  
+| City       | Ogden |
+| State      | Utah | 
+
+## Job Description
+Transcend Innovations merged with Selu Technologies in order to bring in-house development for an atmospheric water generation system.
 
 ## Duties
-* Bullet
-* List
+* Design prototype
+* Test prototype
+* Plan manufacturing
 
 ## Notes
 What I learned at this position.
