@@ -7,9 +7,8 @@ sortValue: 004
 startDate: March, 2016 
 endDate: January, 2018 
 ---
-
 |            |  |
-| --         |--|
+| --:        |--|
 | Supervisor | Orlin Wetzker Chief Executive Officer |  
 | Street     |  |  
 | City       | Ogden  |
@@ -25,5 +24,4 @@ endDate: January, 2018
 * Generated project templates, autonomous document creation, and release management for Altium.
 * Developed company best practices for Git version-control system.
 
-## Notes
-What I learned at this position.
+

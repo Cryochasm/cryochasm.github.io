@@ -8,7 +8,7 @@ startDate: December, 2014
 endDate: September, 2016 
 ---
 |            |  |
-| --         |--|
+| --:        |--|
 | Supervisor | Scott Jackson |  
 | Street     |  |  
 | City       | Scoville |
@@ -44,5 +44,3 @@ As a facilities engineer I was responsible for the power distribution of all the
 * LEAN Basic
 * SAFESTART
 
-## Notes
-What I learned at this position.

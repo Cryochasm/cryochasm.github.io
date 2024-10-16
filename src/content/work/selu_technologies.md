@@ -8,7 +8,7 @@ startDate: November, 2020
 endDate: February, 2021
 ---
 |            |  |
-| --         |--|
+| --:        |--|
 | Supervisor | Orlin Wetzker Chief Product Officer |  
 | City       | Ogden |
 | State      | Utah | 
@@ -21,5 +21,3 @@ Transcend Innovations merged with Selu Technologies in order to bring in-house d
 * Test prototype
 * Plan manufacturing
 
-## Notes
-What I learned at this position.
