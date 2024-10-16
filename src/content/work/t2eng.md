@@ -8,7 +8,7 @@ startDate: May, 2021
 endDate: March, 2024
 ---
 |            |  |
-| --         |--|
+| --:        |--|
 | Supervisor | Eric Tanner Chief Executive Officer |  
 | City       | Layton |
 | State      | Utah | 
@@ -26,7 +26,3 @@ endDate: March, 2024
 * FreeRTOS development.
 * Set up company standards and templates with Altium365.
 * Set up company collaboration tools such as Slack, Confluence, JIRA, and Bitbucket.
-
-
-## Notes
-What I learned at this position.

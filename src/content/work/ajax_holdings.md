@@ -8,7 +8,7 @@ startDate: February, 2021
 endDate: March, 2023 
 ---
 |            |  |
-| --         |--| 
+| --:         |--| 
 | City       | Clearfield |
 | State      | Utah | 
 | Zip        | 84015 |
@@ -20,5 +20,3 @@ endDate: March, 2023
 * Prototyping
 * Testing
 
-## Notes
-What I learned at this position.

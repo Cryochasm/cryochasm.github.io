@@ -7,19 +7,16 @@ sortValue: 001
 startDate: January, 2001
 endDate: July, 2007 
 ---
-# Position Title
-## Company Name
 |            |  |
-| --         |--|
+| --:        |--|
 | Supervisor |  |  
 | Street     |  |  
 | City       |  |
 | State      |  | 
 | Zip        |  |
+## Job Description
 
 ## Duties
 * Bullet
 * List
 
-## Notes
-What I learned at this position.
