@@ -1,0 +1,42 @@
+{
+  "$ref": "#/definitions/work",
+  "definitions": {
+    "work": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "employer": {
+          "type": "string"
+        },
+        "img": {
+          "type": "string"
+        },
+        "img_alt": {
+          "type": "string"
+        },
+        "sortValue": {
+          "type": "number"
+        },
+        "startDate": {
+          "type": "string"
+        },
+        "endDate": {
+          "type": "string"
+        },
+        "$schema": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "employer",
+        "img",
+        "sortValue"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "$schema": "http://json-schema.org/draft-07/schema#"
+}
