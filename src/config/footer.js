@@ -1,37 +1,32 @@
 export const footerSocials = [
   {
-    name: 'Twitter',
-    url: 'https://twitter.com/jaydanurwin',
-    icon: "mdi:twitter",
-  },
-  {
     name: 'Youtube',
-    url: 'https://youtube.com/@jaydanurwin',
+    url: 'https://www.youtube.com/@intentioninflow',
     icon: "mdi:youtube",
   },
   {
-    name: 'Github',
-    url: 'https://github.com/jaydanurwin',
-    icon: "mdi:github",
+    name: 'Facebook',
+    url: 'https://www.facebook.com/intentionflowsoul',
+    icon: "mdi:facebook",
   },
   {
-    name: 'Discord',
-    url: 'https://astro.build/chat',
-    icon: "ic:baseline-discord",
+    name: 'Instagram',
+    url: 'https://www.instagram.com/energy.in.flow/',
+    icon: "mdi:instagram",
   },
 ]
 
 export const footerLists = [
 	{
-		title: 'Landing Pages',
+		title: 'Podcasts',
 		items: [
 			{
-				title: 'Landing Page 1',
-				slug: '/landing-pages/landing-1',
+				title: 'The Spectrum Within',
+				slug: '/landing-pages/the-spectrum-within',
 			},
 			{
-				title: 'Landing Page 2',
-				slug: '/landing-pages/landing-2',
+				title: 'Soulful Conversations Collective',
+				slug: '/landing-pages/soulful-conversations-collective',
 			},
       // {
 			// 	title: 'Landing Page 3',

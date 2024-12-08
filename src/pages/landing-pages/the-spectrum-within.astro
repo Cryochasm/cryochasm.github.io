@@ -1,0 +1,44 @@
+---
+import { Icon } from 'astro-icon/components';
+import {
+	AnnouncementBar,
+	Button,
+	CustomerQuoteSection,
+	ThreeColumnTextSection,
+	YouTubeEmbedSection,
+	StickyTextImageSection,
+	CtaCardSection,
+} from '@components/odyssey-theme';
+import Layout from '../../layouts/Page.astro';
+import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
+
+const seo = {
+	title: 'The Spectrum Within | The In Flow Podcast Network',
+	description: 'The Spectrum Within | The In Flow Podcast Network',
+};
+---
+
+<Layout {seo}>
+	<TextAndImageHero reversed>
+		<div slot="text-container">
+			<h1>Subscribe by copying and pasting this link into your favorite podcast player</h1>
+			<p>https://cryochasm.github.io/rss/the-spectrum-within.xml</p>
+		</div>
+		<div slot="btns-container">
+			<Button href="/theme/get-started" customIcon
+				>Get Started <Fragment slot="icon">
+					<Icon name="ic:baseline-chevron-right" />
+				</Fragment></Button
+			>
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/the-spectrum-within-square.png"
+				alt="The Spectrum Within"
+				id="home-hero-image"
+			/>
+		</picture>
+	</TextAndImageHero>
+
+
+</Layout>
